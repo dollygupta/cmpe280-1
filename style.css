@@ -1,0 +1,106 @@
+h3{
+	 margin-top: 0;
+	background-color: #DCDCDC;
+	text-align: center;
+	border-radius: 6px 6px 0 0;
+	padding: 7px;
+	}
+
+.loginbox {
+    border: 1px solid gray;
+    border-radius: 6px;
+    width: 420px;
+    margin: auto;
+    margin-top: 200px;
+
+}
+ 
+.loginbox table{
+	width: 320px;
+	margin: auto;
+}
+.loginbox p{
+	color: blue;
+	width: 320px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+button{
+	border-radius: 10px;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	border-color: black;
+	border-width: 2px;
+	color: black;
+}
+
+.box{
+	border: 1px solid gray;
+    border-radius: 6px;
+    width: 1120px;
+    margin: auto;
+    margin-top: 175px;
+}
+
+section{
+	width:620px;
+	float: left;
+	padding:0px 30px 30px 30px;
+}
+
+.S4{
+	width:520px;
+	float: left;
+	padding:0px 30px 30px 30px;
+}
+#s3{
+	width:570px;
+	float: left;
+	padding:0px 0px 30px 30px;
+}
+
+.table1{
+	padding:20px;
+}
+
+.table1 td{
+	padding:20px;
+}
+#head2{
+	padding: 20px 20px 0px 40px;
+}
+
+.table2{
+
+	width: 1000px;
+	margin: auto;
+}
+.table2 td{
+	padding:20px;
+}
+#table3{
+	padding:0px;
+}
+
+.survey{
+	width:900px;
+	padding:0px 30px 30px 30px;
+	margin: auto;
+}
+.table6 td{
+	padding:0px 0px 70px 30px;
+}
+.tableb td{
+	padding:0px 0px 0px 30px;
+}
+
+.summary{
+    width: 920px;
+    padding:25px;
+    border: 1px solid black;
+    margin: auto;
+}

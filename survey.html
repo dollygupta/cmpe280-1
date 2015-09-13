@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class=box>
+<h3>Survey</h3>
+<div class="survey">
+<p id="head5">How did you like center ?<p>
+<br>
+<form action="score.html">
+  <input type="hidden" id="append1" name="answer1" value="" />
+   <input type="hidden" id="append2" name="answer2" value="" />
+   <input type="hidden" id="append3" name="answer3" value="" />
+   <input type="hidden" id="append3b" name="answer3b" value="" />
+   <input type="hidden" id="append4" name="answer4" value="" />
+Comments:
+<textarea rows="4" cols="50"></textarea>
+<p>Select Test Area Location:</p>
+<table class="table6">	
+<tr><td>City: 
+	 <select>
+  <option value="San Jose">San Jose</option>
+  <option value="San Francisco">San Francisco</option>
+  <option value="Mountain View">Mountain View</option>
+  <option value="Palo Alto">Palo Alto</option>
+</select> 
+</td>
+<td> Room Number#: 
+ <select>
+  <option value="Room 337">Room 337</option>
+  <option value="Room 210">Room 210</option>
+  <option value="Room 410">Room 410</option>
+  <option value="Room 337">Room 337</option>
+</select> 
+</td></tr></table>
+<table class="tableb">
+<tr>
+  <td><input type="submit" value="Submit & Next Question"></td>
+   <td><input type="button" value="Cancel & Clear Selection" onclick="myFunction()" ></td>
+</tr></table>
+</form>
+</div>
+</div>
+<script type="text/javascript">
+  document.getElementById('append1').value =findValue1(); 
+  document.getElementById('append2').value =findValue2(); 
+  document.getElementById('append3').value =findValue3(); 
+  document.getElementById('append3b').value =findValue3b(); 
+  document.getElementById('append4').value =findValue4(); 
+  function myFunction() {
+    window.location.reload(true);
+     alert("hello");
+}
+  function findValue1(){
+  var locate = window.location.toString().split("?");
+  var result= locate[1].split("&");
+  var output1=result[0].split("=")[1];
+     return output1;
+  }
+  function findValue2(){
+  var locate = window.location.toString().split("?");
+  var result= locate[1].split("&");
+  var output2=result[1].split("=")[1];
+     return output2;
+  }
+   function findValue3(){
+  var locate = window.location.toString().split("?");
+  var result= locate[1].split("&");
+  var output3=result[2].split("=")[1];
+     return output3;
+  }
+   function findValue3b(){
+  var locate = window.location.toString().split("?");
+  var result= locate[1].split("&");
+  var output3b=result[3].split("=")[1];
+     return output3b;
+  }
+  function findValue4(){
+  var locate = window.location.toString().split("?");
+  var result= locate[1].split("&");
+  var output4=result[4].split("=")[1];
+     return output4;
+  }
+  </script>
+</body>
+<html>

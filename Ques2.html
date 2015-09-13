@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class=box>
+<h3>Question 2 </h3>
+<p id="head2">Select the cosine theorem formula<p>
+<br>
+<form action="Ques3.html">
+<input type="hidden" id="append" name="answer1" value="" />
+<table class="table2">
+<tr><td>
+  <input type="radio" name="answer2" value="1">
+  <math>
+    <mo class="qopname">cos</mo>
+  <mrow><mi>(</mi><mi>a</mi><mo>+</mo><mi>b</mi><mi>)</mi></mrow> <mo>=</mo>
+  <mo class="qopname">cos</mo>
+  <mi>a</mi>
+  <mo class="qopname">cos</mo>
+  <mi>b</mi>
+  <mo>+</mo>
+  <mo class="qopname">sin</mo>
+  <mi>a</mi>
+  <mo class="qopname">sin</mo>
+  <mi>b</mi>
+</math>
+<td>
+<input type="radio" name="answer2" value="2">
+<math>
+    <mo class="qopname">sin</mo>
+  <mrow><mi>(</mi><mi>a</mi><mo>+</mo><mi>b</mi><mi>)</mi></mrow> <mo>=</mo>
+  <mo class="qopname">sin</mo>
+  <mi>a</mi>
+  <mo class="qopname">sin</mo>
+  <mi>b</mi>
+  <mo>+</mo>
+  <mo class="qopname">cos</mo>
+  <mi>a</mi>
+  <mo class="qopname">cos</mo>
+  <mi>b</mi>
+</math></td>
+<tr><td><input type="radio" name="answer2" value="3">
+<math>
+  <mo class="qopname">sin</mo>
+  <mi>a</mi>
+  <mo>+</mo>
+  <mo class="qopname">sin</mo>
+  <mi>b</mi>
+  <mo>=</mo><mn>2</mn>
+  <mo class="qopname">sin</mo>
+  <mfenced separators="" open="(" close=")">
+  <mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mrow><mn>2</mn></mrow></mfrac></mfenced>
+  <mo class="qopname">cos</mo>
+  <mfenced separators="" open="(" close=")">
+  <mfrac><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mrow><mn>2</mn></mrow></mfrac></mfenced>
+</math></td>
+<td>
+<input type="radio" name="answer2" value="4">
+<math>
+  <mo class="qopname">sin</mo>
+  <mi>a</mi>
+  <mo>-</mo>
+  <mo class="qopname">sin</mo>
+  <mi>b</mi>
+  <mo>=</mo><mn>2</mn>
+  <mo class="qopname">cos</mo>
+  <mfenced separators="" open="(" close=")">
+  <mfrac><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mrow><mn>2</mn></mrow></mfrac></mfenced>
+  <mo class="qopname">sin</mo>
+  <mfenced separators="" open="(" close=")">
+  <mfrac><mrow><mi>a</mi><mo>-</mo><mi>b</mi></mrow><mrow><mn>2</mn></mrow></mfrac></mfenced>
+</math>
+</td></tr>
+<tr>
+  <td><input type="submit" value="Submit & Next Question"></td>
+   <td><input type="button" value="Cancel & Clear Selection" onclick="myFunction()" ></td>
+</tr></table>
+</form>
+</div>
+<script type="text/javascript">
+  document.getElementById('append').value =findValue(); 
+  
+  function findValue(){
+  var locate = window.location.toString().split("?");
+  var result= locate[1];
+  var output=result.split("=")[1];
+     return output;
+  }
+  function myFunction() {
+    window.location.reload(true);
+     alert("hello");
+}
+  </script>
+</body>
+<html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class=box>
+	<h3>Score Card</h3>
+	<div class="summary">
+<details>
+  <summary>Quantitative Section</summary>
+  <p id="qq">Number of Questions Answered:</p>
+  <p id="qc">Number of Correct Answers:</p>
+  <p id="qs">Score:</p>
+</details>
+<details>
+  <summary>Reading Section</summary>
+  <p id="rq">Number of Questions Answered:</p>
+  <p id="rc">Number of Correct Answers:</p>
+  <p id="rs">Score:</p>
+  </details>
+<details>
+  <summary>Audio/Video Section</summary>
+  <p id="aq">Number of Questions Answered:</p>
+  <p id="ac">Number of Correct Answers:</p>
+  <p id="as">Score:</p>
+</details>
+</div>
+<center><h2>Thank You!!</h2></center>
+
+<center><button type="button" onclick="closeWin()">Finish</button></center>
+<br><br>
+</div>
+<script type="text/javascript">
+ var locate = window.location.toString().split("?");
+  var result= locate[1].split("&");
+  var answer1=result[0].split("=")[1];
+   var answer2=result[1].split("=")[1];
+    var answer3=result[2].split("=")[1];
+     var answer3b=result[3].split("=")[1];
+      var answer4=result[4].split("=")[1];
+      scoresq();
+      scoresr();
+      scoresa();
+function scoresq(){
+  var qq,qc,qs;
+    if(answer1 !="")
+    {
+      qq=1;
+      if(answer1=="4")
+      {
+        qc=1;
+      }
+      else
+        {qc=0;}
+    }
+    else
+    {
+      qq=0;
+      qc=0;
+    }
+    if(answer2 !="")
+    {
+      qq++;
+
+      if(answer2=="1")
+      {
+        qc++;
+      }
+    }
+    qs=5*qc;
+   
+    document.getElementById('qq').innerHTML += qq; 
+    document.getElementById('qc').innerHTML += qc;
+    document.getElementById('qs').innerHTML += qs;  
+}
+function scoresr(){
+  var rq,rc,rs;
+    if(answer3 !="" && answer3 !="")
+    {
+      rq=1;
+      if(answer3=="2" && answer3b=="11")
+      {
+        rc=1;
+        rs=5;
+      }
+      else
+        {rc=0;
+          rs=0;
+        }
+    }
+    else
+    {
+      rq=0;
+      rc=0;
+    }
+    document.getElementById('rq').innerHTML += rq; 
+    document.getElementById('rc').innerHTML += rc;
+    document.getElementById('rs').innerHTML += rs; 
+}
+function scoresa(){
+var aq,ac,as;
+    if(answer4 !="")
+    {
+      aq=1;
+      if(answer4=="1")
+      {
+        ac=1;
+      }
+      else
+        {ac=0;}
+    }
+    else
+    {
+      aq=0;
+      ac=0;
+    }
+    as=5*ac;
+    document.getElementById('aq').innerHTML+= aq; 
+    document.getElementById('ac').innerHTML += ac;
+    document.getElementById('as').innerHTML += as; 
+}
+function closeWin() {
+    window.close();
+}
+</script>
+</body>
+</html>

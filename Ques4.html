@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class=box>
+<h3>Question 4 </h3>
+<section class="S4">
+<p id="head4">Watch the video and answer the following question.<br> What is the source as mentioned in the video? <p>
+<br>
+<form action="survey.html">
+	<input type="hidden" id="append1" name="answer1" value="" />
+   <input type="hidden" id="append2" name="answer2" value="" />
+   <input type="hidden" id="append3" name="answer3" value="" />
+   <input type="hidden" id="append3b" name="answer3b" value="" />
+<table class="table1">
+<tr><td>
+  <input type="radio" name="answer4" value="1"> NASA.Gov
+  </td>
+  <td>
+  <input type="radio" name="answer4" value="11"> Data.Gov
+  </td></tr>
+<tr><td><input type="radio" name="answer4" value="2"> Facebook
+</td>
+<td>
+<input type="radio" name="answer4" value="21"> XYZ.net
+</td></tr>
+<tr>
+  <td><input type="submit" value="Submit & Next Question"></td>
+  <td><input type="button" value="Cancel & Clear Selection" onclick="myFunction()" ></td>
+</tr></table>
+</form>
+</section>
+<aside>
+<iframe width="500" height="320" src="https://www.youtube.com/embed/icitZubDmFI" frameborder="0" allowfullscreen></iframe>
+<br><br><br>
+</aside>
+<script type="text/javascript">
+  document.getElementById('append1').value =findValue1(); 
+  document.getElementById('append2').value =findValue2(); 
+  document.getElementById('append3').value =findValue3(); 
+  document.getElementById('append3b').value =findValue3b();
+  function myFunction() {
+    window.location.reload(true);
+     alert("hello");
+} 
+  function findValue1(){
+  var locate = window.location.toString().split("?");
+  var result= locate[1].split("&");
+  var output1=result[0].split("=")[1];
+     return output1;
+  }
+  function findValue2(){
+  var locate = window.location.toString().split("?");
+  var result= locate[1].split("&");
+  var output2=result[1].split("=")[1];
+     return output2;
+  }
+   function findValue3(){
+  var locate = window.location.toString().split("?");
+  var result= locate[1].split("&");
+  var output3=result[3].split("=")[1];
+     return output3;
+  }
+   function findValue3b(){
+  var locate = window.location.toString().split("?");
+  var result= locate[1].split("&");
+  var output3b=result[2].split("=")[1];
+     return output3b;
+  }
+  </script>
+</div>
+</body>
+<html>
+
